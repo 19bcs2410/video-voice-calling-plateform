@@ -1,0 +1,93 @@
+<html>
+
+<head>
+    <style>
+        * {
+            margin: 0;
+        }
+        
+        .room_select {
+            background-image: url("./images/8f2742b8.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        .room_enter {
+            background-color: rgba(189, 189, 194, 0.6);
+            width: 50vw;
+            height: 50vh;
+            display: grid;
+            justify-content: space-around;
+            align-items: center;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+            border-radius: 10px;
+        }
+        
+        .room_enter>h2 {
+            font-size: 3vw;
+            font-weight: 600;
+            color: rgb(44, 34, 34);
+            margin-left: 7vw;
+            margin-top: -6vh;
+            font-family: Arial, Helvetica, sans-serif;
+            text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+        }
+        
+        .room_enter>form>input {
+            padding: 1.5vh 2vw;
+            font-size: 1.4vw;
+            font-weight: 600;
+            outline-style: none;
+            border: none;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+            border-radius: 4px;
+        }
+        
+        .room_enter>form>button {
+            padding: 1vw 1vh;
+            width: 8vw;
+            font-size: 1.4vw;
+            font-weight: 600;
+            margin-left: 8vw;
+            border: none;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+            background-color: rgb(65, 71, 155);
+            color: white;
+            border-radius: 4px;
+        }
+        
+        .room_enter>form>button:hover {
+            background-color: rgb(30, 5, 90);
+        }
+    </style>
+    <script>
+    </script>
+
+</head>
+
+<body>
+    <div class="room_select">
+        <div class="room_enter">
+            <h2>Connect Friends</h2>
+            <form action="/room_id" method='GET'>
+
+
+
+                <input type="text" name='room_id' placeholder="Enter Room id">
+                <button type='submit'>Connect</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
